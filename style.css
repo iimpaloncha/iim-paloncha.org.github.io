@@ -60,7 +60,7 @@ body{
 }
 :root{
     --primary:rgba(255,255,255,0.1);
-    --white:rgb(192, 192, 192);
+    --white:rgb(233, 233, 233);
     --overlay:#30353a8a;
     --message-bg:#ececec;
     --footer-bg:rgb(243, 243, 243);
@@ -142,7 +142,7 @@ body{
     width: 100%;
     z-index:99;
     background:var(--primary);
-    background: rgba(31, 31, 31, 0.548);
+    background: rgba(49, 49, 49, 0.596);
     backdrop-filter: blur(5px);
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
     border-bottom:2px solid var(--primary);
@@ -173,11 +173,20 @@ body{
 .nav-bar a:hover,.active{
     color:rgb(196, 107, 47)!important;
 }
-
+.color-white{
+    color:white;
+}
+.color-black{
+    color:#2B2A29!important;
+}
+.color-grey{
+    color: #AAA4A1;
+}
+.color-gold{
+    color: #c46e24!important;
+}
 /* hero section styles */
 .hero-section{
-    /* background:linear-gradient(45deg, rgba(2, 1, 8, 0.781) 0%, rgba(59, 59, 73, 0.603) 53%),url("./assets/images/foundry-worker-pouring-metal.jpg"); */
-    height:100vh;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,8 +219,8 @@ video{
 .glass-section{
     margin:0vh auto;
     height:100vh;
-    background:var(--primary);
-    backdrop-filter: blur(10px);
+    background:#36363581;
+    backdrop-filter: blur(5px);
     box-shadow:0 20px 50px rgba(0,0,0,0.15);
     border-top:2px solid var(--primary);
     border-left:2px solid var(--primary);
@@ -232,13 +241,18 @@ video{
     z-index:1;
 }
 .heading{
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
-    padding:17.5rem 0rem;
     z-index:99;
     margin:0 auto;
     font-weight: 800;
     animation:text 1s 1; 
+    text-shadow: 5px 10px 10px rgb(15, 15, 15), 2px 5px 10px rgba(0, 0, 0, 0.904);
+}
+.small-heading{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .chairman-pic img{
     width:100%;
@@ -247,9 +261,8 @@ video{
 }
 /* message section styles */
 .message-section{
-    background: rgb(196, 196, 196);
-    color:rgb(82, 82, 82);
-    text-align: justify;
+    background:#b9622b;
+    color:#2B2A29;
     font-size: 1.5rem;
     font-weight:500;
 }
@@ -258,6 +271,7 @@ video{
     font-size: 2rem;
     padding:1rem 0 5rem 0;
     font-weight: 700;
+    color:white;
 }
 .other-common-heading{
     text-align: center;
@@ -275,22 +289,26 @@ video{
     font-size: 1.8rem;
     padding:1rem 0;
     font-weight: 600;
-    color:rgb(102, 36, 207);
+    color:#b9622b;
+    text-shadow: 5px 10px 10px rgb(15, 15, 15), 2px 5px 10px rgba(0, 0, 0, 0.904);
 }
 .second-message-section{
-    background:#355268;
+    background:#AAA4A1;
     color:rgb(221, 221, 221);
-    text-align: justify;
     font-size: 1.5rem;
     font-weight:500;
 }
 blockquote{
     margin-top:1rem;
+    color:white;
+}
+.second-message-section blockquote{
+    color:#2B2A29;
 }
 /* collaborator-section styles */
 .collaborator-section img{
     width:10rem;
-    filter:grayscale(100%);
+    filter:grayscale(50%);
     opacity:0.5;
 }
 .collaborator-section img:hover{
@@ -307,7 +325,7 @@ blockquote{
 }
 /* about section styles */
 .about-img{
-    background:linear-gradient(rgba(2, 2, 2, 0.657),rgba(2, 2, 2, 0.657)),url("./assets/images/GK-large-8-1360x500.png") ;
+    background:#b9622b;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -319,8 +337,11 @@ blockquote{
     
 }
 /* team section styles */
-.team-section,.gallery-section{
-    background-color: rgb(99, 87, 116);
+.team-section{
+    background-color: #2B2A29;
+}
+.gallery-section{
+    background-color:#735c8f;
 }
 .box{
     margin:0vh auto;
@@ -335,9 +356,9 @@ blockquote{
     border-radius:25px;
 }
 .box p{
-    width:80%;
+    width:95%;
     display: inline-block;
-    padding:1rem;
+    padding:0.5rem;
 }
 .team-member-img{
     flex:0 1 15%;
@@ -353,13 +374,14 @@ blockquote{
     border-radius: 50%;
 }
 .team-heading{
-    color:white;
-    font-size: 1.5rem;
+    color:#b9622b;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 .team-para{
-    color:rgb(221, 221, 221);
-    font-size: 1rem;
+    color:rgb(236, 236, 236);
+    font-size: 1.5rem;
+    margin-bottom:2rem;
 }
 .team-second-row{
     margin-top:2rem;
@@ -386,16 +408,23 @@ blockquote{
     margin-top:2rem;
 }
 .bottom-footer-section{
-    background:rgb(230, 230, 230);
+    background:#ececec;
     padding:1rem;
     font-size: 1.2rem;
     font-weight: 600;
+}
+.top-footer-section{
+    background:#E8D9CC;
 }
 .footer a i{
     color:#3f3f3f !important;
     font-size:3rem;
     margin-right:2rem;
 }
+.footer-nav-bar a:hover,.footer-nav-bar i:hover{
+    color:#b9622b!important;
+}
+
 @media screen and (max-width:1125px){
 html{
     font-size: 14px;
@@ -450,7 +479,7 @@ html{
     position: fixed;
     z-index:99;
     right:3rem;
-    top:3rem;
+    top:2rem;
 }
 .nav-bar{
     position:fixed;
@@ -476,10 +505,9 @@ html{
     width:80px;
 }
 .brandlogo-text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight:700;
 }
-
 .flex-small-100{
     flex:0 1 100%;
 }
@@ -497,7 +525,6 @@ html{
     margin-top:2rem;
     font-size:1.2rem;
 }
-
 .collab-logo{
     margin-bottom:4rem;
 }
@@ -521,14 +548,15 @@ html{
     .nav-bar li{
         margin-top:2rem;
     }
-    
+    .bars{
+        right:3rem;
+        top:3rem;
+    }
     
     
 }
 @media screen and (max-width:440px){
-    .glass-section{
-        height:4vh;
-    }
+   
     .nav-bar li{
         margin-top:2rem;
     }
@@ -536,10 +564,7 @@ html{
     
 }
 @media screen and (max-width:380px){
-    .glass-section{
-        top:5rem;
-        padding:0;
-    }
+   
     .padding-add{
         padding-left: 3rem;
         padding-right: 3rem;
@@ -547,9 +572,6 @@ html{
     
 }
 @media screen and (max-width:340px){
-    .glass-section{
-        padding:0;
-    }
     
     .padding-add{
         padding-left: 1rem;
@@ -559,12 +581,12 @@ html{
         width:60px;
     }
     .brandlogo-text{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight:700;
     }
     .bars{
-        right:1rem;
-        top:1rem;
+        right:2rem;
+        top:2rem;
     }    
 }
 @media screen and (max-width:321px){
