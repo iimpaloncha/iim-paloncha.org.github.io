@@ -496,6 +496,9 @@ html{
 .brandlogo{
     z-index: 0;
 }
+.padding-contact-5{
+    padding-top:10rem;
+}
 }
 @media screen and (max-width:780px){
 html{
@@ -560,9 +563,7 @@ html{
     .nav-bar li{
         margin-top:2rem;
     }
-    .padding-contact-5{
-        padding-top:5rem;
-    }
+   
   
     
 }
@@ -598,9 +599,11 @@ html{
         padding-left: 0;
         padding-right: 0;
     }
-    .padding-3{
-        padding:0;
+    .padding-contact-5{
+        padding-top:5rem;
     }
+    
+    
 }
 
 
