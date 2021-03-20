@@ -341,7 +341,7 @@ blockquote{
     background-color: #2B2A29;
 }
 .gallery-section{
-    background-color:#735c8f;
+    background-color:#a75919;
 }
 .box{
     margin:0vh auto;
@@ -559,6 +559,9 @@ html{
    
     .nav-bar li{
         margin-top:2rem;
+    }
+    .padding-contact-5{
+        padding-top:5rem;
     }
   
     
