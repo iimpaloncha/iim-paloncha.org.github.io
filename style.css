@@ -108,6 +108,9 @@ body{
 .flex-65{
     flex:0 1 65%;
 }
+.flex-68{
+    flex:0 1 68%;
+}
 .flex-70{
     flex:0 1 70%;
 }
@@ -551,6 +554,9 @@ html{
 }
 .nav-bar a{
     font-size:2rem;
+}
+.padding-small-top-1{
+    padding-top:1rem;
 }
 }
 @media screen and (max-width:560px){
