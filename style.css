@@ -105,6 +105,15 @@ body{
 .flex-60{
     flex:0 1 60%;
 }
+.flex-65{
+    flex:0 1 65%;
+}
+.flex-70{
+    flex:0 1 70%;
+}
+.flex-80{
+    flex:0 1 80%;
+}
 .flex-wrap{
     flex-wrap:wrap;
 }
@@ -113,6 +122,9 @@ body{
 }
 .align-self-stretch{
     align-self: stretch;
+}
+.align-self-start{
+    align-self: flex-start;
 }
 .align-self-center{
     align-self: center;
@@ -233,6 +245,7 @@ video{
 }
 
 .contact-section{
+    height:80vh;
     z-index:1;
     background-color: #2B2A29;
 }
@@ -294,8 +307,11 @@ video{
     font-weight:500;
 }
 blockquote{
-    margin-top:1rem;
+    line-height: 1.4;
     color:white;
+}
+.padding-top-1{
+    padding-top:1rem;
 }
 .second-message-section blockquote{
     color:#2B2A29;
