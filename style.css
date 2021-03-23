@@ -163,11 +163,16 @@ body{
     border-bottom:2px solid var(--primary);
 }
 .brandlogo img{
-    width:100px;
+    width:200px;
 }
 .brandlogo-text{
     font-size: 2rem;
     font-weight:700;
+    padding:2rem 1rem;
+    color:#E97A19;
+}
+.background-logo{
+    background-color: rgba(255, 255, 255, 0.637);
 }
 .brandlogo{
     position:relative;
@@ -518,10 +523,12 @@ html{
 }
 .brandlogo img{
     width:80px;
+    
 }
 .brandlogo-text{
     font-size: 2rem;
     font-weight:700;
+    
 }
 .flex-small-100{
     flex:0 1 100%;
