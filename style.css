@@ -450,7 +450,7 @@ blockquote{
     bottom:0px;
     right:0px;
 }
-@media screen and (max-width:1125px){
+@media screen and (max-width:1260px){
 html{
     font-size: 14px;
 }
