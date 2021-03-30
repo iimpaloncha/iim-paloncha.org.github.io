@@ -57,6 +57,7 @@ body{
     color:var(--white);
     line-height:1.5;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 :root{
     --primary:rgba(255,255,255,0.1);
@@ -443,7 +444,11 @@ blockquote{
 .footer-nav-bar a:hover,.footer-nav-bar i:hover{
     color:#b9622b!important;
 }
-
+.daily-visitor-section{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+}
 @media screen and (max-width:1125px){
 html{
     font-size: 14px;
