@@ -165,11 +165,12 @@ body{
 }
 .brandlogo img{
     width:200px;
+    padding:1rem;
 }
 .brandlogo-text{
     font-size: 2rem;
     font-weight:700;
-    padding:2rem 1rem;
+    padding:2rem 2rem;
     color:#E97A19;
 }
 .background-logo{
